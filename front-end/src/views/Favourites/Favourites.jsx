@@ -1,5 +1,5 @@
-import { FavouritesList } from "../FavouritesList/FavouritesList";
-import { Layout } from "../Layout/Layout";
+import { FavouritesList } from "../../components/FavouritesList/FavouritesList";
+import { Layout } from "../../components/Layout/Layout";
 
 export function Favorites() {
   const favouritesProducts = [
