@@ -1,20 +1,20 @@
 import "./styles/theme.css";
 import "./styles/globals.css";
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Cart } from "./views/Cart/Cart.jsx";
-import { Favourites } from "./views/Favourites/Favourites.jsx";
-import { Layout } from "./components/Layout/Layout.jsx";
-import { MainPage } from "./views/MainPage/MainPage.jsx";
+import { Cart } from "./views/Cart/Cart";
+import { Favourites } from "./views/Favourites/Favourites";
+import { Layout } from "./components/Layout/Layout";
+import { MainPage } from "./views/MainPage/MainPage";
 import { ProductsList } from "./views/ProductsList/ProductsList";
-import { ProductDetails } from "./views/ProductDetails/ProductDetails.jsx";
-import { mainPageLoader } from "./api/mainPageLoader.js";
-import { productListLoader } from "./api/productListLoader.js";
-import { productLoader } from "./api/productLoader.js";
-import { addProductToFavourites } from "./api/addProductToFavouritesAction.js";
-import { favouritesLoader } from "./api/favouritesLoader.js";
-import { deleteFavouriteAction } from "./api/deleteFavouriteAction.js";
+import { ProductDetails } from "./views/ProductDetails/ProductDetails";
+import { mainPageLoader } from "./api/mainPageLoader";
+import { productListLoader } from "./api/productListLoader";
+import { productLoader } from "./api/productLoader";
+import { addProductToFavourites } from "./api/addProductToFavouritesAction";
+import { favouritesLoader } from "./api/favouritesLoader";
+import { deleteFavouriteAction } from "./api/deleteFavouriteAction";
 
 const router = createBrowserRouter([
   {
@@ -57,8 +57,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
     <RouterProvider router={router}></RouterProvider>
-  </StrictMode>
+  </React.StrictMode>
 );
