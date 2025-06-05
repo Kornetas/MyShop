@@ -82,3 +82,10 @@ package.json # główny package, konfiguracja workspaces i skryptów
 - `npm run reset` – resetuje bazę danych backendu do oryginału
 
 ---
+
+## Inspiracja
+
+Projekt został zrealizowany na bazie materiałów oraz kodu z kursu ["Zrozumieć React"](https://zrozumiecreact.pl/) autorstwa Kacpra Sokołowskiego (@kaapa-s).  
+Repozytorium stanowi zarówno ćwiczenie praktyczne z kursu, jak i mój własny rozwój oraz dodatkowe funkcjonalności i zmiany.
+
+Dziękuję za inspirację i świetne materiały edukacyjne!
